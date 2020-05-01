@@ -1,0 +1,62 @@
+.word {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+span[class*='x_x'] {
+    display: block;
+}
+.x_xd1, .x_xoh {
+    margin-top: 1rem;
+}
+.x_xo1 {
+    padding-left: 1rem;
+}
+.x_rr {
+    display: inline !important;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 1px;
+}
+
+.hw {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.pr {
+    color: gray;
+}
+.etym {
+    font-size: 0.9em;
+}
+.gramb {
+    margin-top: 1rem;
+}
+.semb {
+    margin-left: 1rem;
+}
+.frmg {
+    font-size: 0.9em;
+}
+.trgg {
+    display: inline;
+}
+.exg {
+    margin-left: 0.3rem;
+    color: gray;
+}
+.cnt, .oup_label {
+    color: gray;
+}
+.sn {
+    font-size: 1.2em;
+}
+.idmb {
+    margin-top: 1rem;
+}
+.t_label {
+    display: block;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
