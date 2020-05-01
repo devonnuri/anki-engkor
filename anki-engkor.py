@@ -42,7 +42,7 @@ if __name__ == '__main__':
       {
         'name': 'Card 1',
         'qfmt': '<div class="word">{{Word}}</div>',
-        'afmt': '{{FrontSide}}<hr id="answer">{{Definition}}',
+        'afmt': '{{FrontSide}}<hr id="answer"><div class="definition">{{Definition}}</div>',
       },
     ])
 
@@ -54,7 +54,6 @@ if __name__ == '__main__':
   with open(args.list) as f:
     for line in f:
       word = line.strip()
-      print(word)
       cursor = conn.execute('SELECT * FROM definitions WHERE title=?', (word, ))
       row = cursor.fetchone()
       if row is None:
@@ -62,7 +61,7 @@ if __name__ == '__main__':
         row = cursor.fetchone()
       if row is None:
         print('== Word %s doesn\'t exist.' % word)
-        exit()
+        continue
       xml = row[2].decode('utf-8')
       root = ElementTree.fromstring(xml)
       html = ''

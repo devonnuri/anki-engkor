@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.definition {
+    font-size: 110%;
+}
+
 span[class*='x_x'] {
     display: block;
 }
